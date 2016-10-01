@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+    
+    #ball{
+	    
+	    width:100px;
+	    height: 100px;
+	    background-color: red;
+	    border-radius: 200px;
+    }
+       </style>
+</head>
+<body>
+   <h1>Ball</h1>
+   <div onclick="ball1.change();" id="ball"></div>
+     <script>
+    
+    var balls=function(){
+	    
+	    this.wdth=document.getElementById("ball").style.width="100px";
+	    this.hght=document.getElementById("ball").style.height="100px";
+	    this.clr=document.getElementById("ball").style.backgroundColor="yellow";
+	    this.createBalls=function(){
+		    
+		    document.innerHTML("div");
+	    }
+		this.change=function(){    
+			
+		    var random = Math.floor((Math.random() * 10) + 1); 
+		    
+		    var colours=["red","green","yellow","blue"];
+		    
+		   
+			    
+			 
+				    
+ 
+
+if (random < 3) { 
+document.querySelector("div").style.backgroundColor = colours[1]; 
+} 
+
+else if (random > 3 && random <= 7) { 
+document.querySelector("div").style.backgroundColor = colours[2]; 
+
+} 
+
+else { 
+document.querySelector("div").style.backgroundColor = colours[3];
+
+} 
+
+
+
+		    
+		    };
+	    
+	    
+	    
+	    
+    };
+    
+    var ball1=new balls();
+    ball1.change();
+    
+     
+     </script>
+</body>
+</html>
