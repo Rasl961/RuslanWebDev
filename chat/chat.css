@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    font-size: 24px;
+}
+#greeting{
+    text-align: center;
+}
+.panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background:#4b4b4b;
+    
+}
+input{
+    font-size: 20px;
+    width: 100%;
+}
+.inputs{
+    display: flex;
+}
+.input-left{
+    max-width: 15%;
+    padding-right: 05.em
+}
+.input-left, .input-right{
+    flex-grow: 1;
+}
